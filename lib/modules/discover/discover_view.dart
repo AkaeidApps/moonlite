@@ -23,6 +23,13 @@ class DiscoverView extends GetView<DiscoverController> {
           ),
           const SizedBox(height: 16),
           _discoverTile(
+            title: 'Luna AI Assistant',
+            subtitle: 'Real-time intelligent lunar & astronomy guidance',
+            icon: Icons.auto_awesome,
+            color: AppColors.gold,
+            onTap: controller.goToAiAssistant,
+          ),
+          _discoverTile(
             title: 'Moon Phase Explorer',
             subtitle: 'Interactive 3D Moon & 8 Major Phases',
             icon: Icons.nightlight,

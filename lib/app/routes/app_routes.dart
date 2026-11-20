@@ -5,6 +5,7 @@ class AppRoutes {
   static const mainShell = '/main-shell';
 
   // Sub-screens
+  static const aiAssistant = '/ai-assistant';
   static const moonExplorer = '/moon-explorer';
   static const moonCompass = '/moon-compass';
   static const moonFinderAr = '/moon-finder-ar';

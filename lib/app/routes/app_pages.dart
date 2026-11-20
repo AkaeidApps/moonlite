@@ -28,6 +28,8 @@ import '../../modules/profile/profile_view.dart';
 import '../../modules/profile/profile_controller.dart';
 import '../../modules/settings/settings_view.dart';
 import '../../modules/pro/moonlite_pro_view.dart';
+import '../../modules/ai_assistant/ai_assistant_view.dart';
+import '../../modules/ai_assistant/ai_assistant_controller.dart';
 
 class AppPages {
   static final routes = [
@@ -99,5 +101,12 @@ class AppPages {
     ),
     GetPage(name: AppRoutes.settings, page: () => const SettingsView()),
     GetPage(name: AppRoutes.moonlitePro, page: () => const MoonliteProView()),
+    GetPage(
+      name: AppRoutes.aiAssistant,
+      page: () => const AiAssistantView(),
+      binding: BindingsBuilder(() {
+        Get.put(AiAssistantController());
+      }),
+    ),
   ];
 }

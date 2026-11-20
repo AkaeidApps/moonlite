@@ -143,6 +143,37 @@ class HomeView extends GetView<HomeController> {
               ),
               const SizedBox(height: 20),
 
+              // ── Luna AI Assistant Banner ──────────────────────────────
+              GlassContainer(
+                onTap: controller.goToAiAssistant,
+                padding: const EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: AppColors.gold.withOpacity(0.15),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Icon(Icons.auto_awesome, color: AppColors.gold, size: 24),
+                    ),
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Luna AI Astronomy Expert', style: AppTypography.heading3()),
+                          const SizedBox(height: 2),
+                          Text('Ask anything about tonight\'s moon & photography', style: AppTypography.bodySmall(color: AppColors.textSecondary)),
+                        ],
+                      ),
+                    ),
+                    const Icon(Icons.arrow_forward_ios, color: AppColors.textSecondary, size: 14),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 20),
+
               // ── Countdown Widget ──────────────────────────────────────
               const MoonCountdownWidget(
                 eventName: 'SUPER MOON',

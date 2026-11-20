@@ -56,6 +56,7 @@ class HomeController extends GetxController {
   }
 
   void goToExplorer() => Get.toNamed(AppRoutes.moonExplorer);
+  void goToAiAssistant() => Get.toNamed(AppRoutes.aiAssistant);
   void goToEclipse() => Get.toNamed(AppRoutes.eclipseTracker);
   void goToPhotography() => Get.toNamed(AppRoutes.photographyPlanner);
   void goToWeather() => Get.toNamed(AppRoutes.weatherVisibility);
